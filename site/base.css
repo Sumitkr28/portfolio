@@ -1,0 +1,93 @@
+/* ===== Sumit Kumar — Portfolio · TERMINAL theme ===== */
+:root{
+  --bg:#0A0A0B;
+  --bg2:#0E0E10;
+  --ink:#EDEDE8;
+  --dim:#8a8a92;
+  --dim2:#6f6f77;
+  --line:#26262b;
+  --line2:#2c2c33;
+  --cy:#27E5E0;
+  --cy-dim:#1aa6a2;
+  --sans:'Space Grotesk',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+  --maxw:1360px;
+  --pad:48px;
+}
+*{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+::selection{ background:var(--cy); color:#0A0A0B; }
+a{ color:inherit; text-decoration:none; }
+.mono{ font-family:var(--mono); }
+.cy{ color:var(--cy); }
+
+/* subtle background grid + scanline texture */
+.bg-grid{
+  position:fixed; inset:0; z-index:0; pointer-events:none;
+  background-image:
+    linear-gradient(var(--line) 1px,transparent 1px),
+    linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:64px 64px;
+  opacity:.18;
+  mask-image:radial-gradient(circle at 50% 30%,#000 0%,transparent 80%);
+  -webkit-mask-image:radial-gradient(circle at 50% 30%,#000 0%,transparent 80%);
+}
+.bg-noise{
+  position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+main{ position:relative; z-index:1; }
+
+.wrap{ max-width:var(--maxw); margin:0 auto; padding:0 var(--pad); }
+
+/* ---- section header label ---- */
+.sec-tag{
+  display:flex; justify-content:space-between; align-items:baseline;
+  font-family:var(--mono); font-size:13px; letter-spacing:.14em; color:var(--dim);
+  padding:14px 0; border-bottom:1px solid var(--line); margin-bottom:40px;
+}
+.sec-tag .n{ color:var(--cy); }
+.sec-tag > span:first-child{
+  color:#0A0A0B; background:var(--cy); font-weight:700;
+  padding:5px 11px; border-radius:2px; letter-spacing:.1em;
+}
+
+/* ---- reveal animation ---- */
+.reveal{ opacity:0; transform:translateY(30px); transition:opacity .85s cubic-bezier(.16,1,.3,1), transform .85s cubic-bezier(.16,1,.3,1); will-change:opacity, transform; }
+.reveal.in{ opacity:1; transform:none; }
+.reveal.d1{ transition-delay:.08s; }
+.reveal.d2{ transition-delay:.16s; }
+.reveal.d3{ transition-delay:.24s; }
+.reveal.d4{ transition-delay:.32s; }
+@media (prefers-reduced-motion:reduce){
+  .reveal{ opacity:1 !important; transform:none !important; }
+}
+
+/* ---- blink ---- */
+@keyframes blink{ 50%{ opacity:.12; } }
+.blip{ width:8px; height:8px; background:var(--cy); border-radius:50%; display:inline-block; animation:blink 1.4s steps(1) infinite; }
+
+/* ---- buttons ---- */
+.btn{
+  display:inline-flex; align-items:center; gap:10px;
+  font-family:var(--mono); font-size:13px; letter-spacing:.05em;
+  padding:14px 22px; border:1px solid var(--line2); color:var(--ink);
+  background:transparent; cursor:pointer; transition:.22s; border-radius:2px;
+}
+.btn:hover{ background:var(--cy); color:#0A0A0B; border-color:var(--cy); }
+.btn.solid{ background:var(--cy); color:#0A0A0B; border-color:var(--cy); }
+.btn.solid:hover{ background:#0A0A0B; color:var(--cy); }
+.btn .arr{ transition:transform .22s; }
+.btn:hover .arr{ transform:translate(3px,-3px); }
+
+.section{ padding:74px 0; }
+@media(max-width:760px){
+  :root{ --pad:22px; }
+  .section{ padding:52px 0; }
+}

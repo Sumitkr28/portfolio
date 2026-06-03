@@ -1,0 +1,38 @@
+# ===== OS / editor =====
+.DS_Store
+Thumbs.db
+.thumbnail
+*.log
+
+# ===== dependencies / build =====
+node_modules/
+.vercel/
+
+# ===== local tooling config =====
+.claude/
+
+# ===== design & dev artifacts (kept locally, not published) =====
+# React design-exploration tooling
+app.jsx
+design-canvas.jsx
+tweaks-panel.jsx
+directions/
+sections/
+
+# Source React (.jsx) experiments — the shipped site uses the compiled
+# .js + .css files in /site, not these
+site/*.jsx
+
+# design-exploration HTML mockups
+Portfolio Directions.html
+Background Animation Options.html
+Sumit Kumar - Portfolio.html
+
+# scratch assets
+uploads/
+screenshots/
+
+# duplicate / legacy
+styles.css
+resume-print.html
+assets/
