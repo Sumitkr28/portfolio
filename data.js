@@ -23,6 +23,18 @@ window.CV = {
   skillsMarquee: ["PYTHON", "LLMs", "RAG", "AI AGENTS", "TENSORFLOW", "DOCKER", "MCP", "FAISS", "LANGCHAIN", "AWS", "XGBOOST", "PROMPT ENGINEERING"],
   experience: [
     {
+      role: "Founder",
+      company: "Xorvion AI",
+      period: "May 2026 — Present",
+      stack: ["Next.js", "TypeScript", "Python", "AI Agents", "LLMs", "RAG", "FastAPI", "Vercel"],
+      points: [
+        "Founded Xorvion AI — an applied AI lab building production-grade agentic systems: autonomous AI agents, conversational assistants, and full-stack web apps.",
+        "Shipped 3 products including SafeTrace (real-time URL threat detection), Zora (a conversational AI assistant fine-tuned on user data), and Couponex (an AI-powered coupon & voucher marketplace).",
+        "Architect multi-agent systems with reasoning and memory, model fine-tuning, and data pipelines for scraping, labeling, and evaluation.",
+        "Drive end-to-end product development — from LLM integration and backend APIs to UI design and deployment on Vercel.",
+      ],
+    },
+    {
       role: "AI & Machine Learning Intern",
       company: "Kloud Technology Works Pvt Ltd",
       period: "Mar 2026 — Present",

@@ -81,12 +81,14 @@
     github:'<path d="M12 1.5C6 1.5 1.5 6 1.5 12c0 4.6 3 8.5 7.2 9.9.5.1.7-.2.7-.5v-1.8c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-1-.6 0-.6 0-.6 1 .1 1.6 1.1 1.6 1.1 1 1.6 2.5 1.2 3.1.9.1-.7.4-1.2.7-1.4-2.3-.3-4.8-1.2-4.8-5.1 0-1.1.4-2.1 1.1-2.8-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 2.9 1.1a10 10 0 0 1 5.2 0c2-1.4 2.9-1.1 2.9-1.1.6 1.5.2 2.6.1 2.9.7.7 1.1 1.7 1.1 2.8 0 3.9-2.5 4.8-4.8 5.1.4.3.7 1 .7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 22.5 12c0-6-4.5-10.5-10.5-10.5z"/>',
     linkedin:'<path d="M4.5 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3 9h3v12H3zM9 9h2.9v1.6h.04c.4-.76 1.4-1.6 2.9-1.6 3.1 0 3.7 2 3.7 4.7V21h-3v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/>',
     phone:'<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 1.9.6 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.8.6a2 2 0 0 1 1.7 2z"/>',
+    xorvion:'<path d="M12 2 20.5 7v10L12 22 3.5 17V7z"/><path d="m9 9 6 6M15 9l-6 6"/>',
   };
-  const isStroke = {email:true, phone:true, linkedin:false, github:false};
+  const isStroke = {email:true, phone:true, linkedin:false, github:false, xorvion:true};
   el('contactLinks').innerHTML = [
     {k:'email', label:'Email', v:cv.email, href:'mailto:'+cv.email},
     {k:'github', label:'GitHub', v:'@Sumitkr28', href:'https://'+cv.github},
     {k:'linkedin', label:'LinkedIn', v:'sumit-kumar2812', href:'https://'+cv.linkedin},
+    {k:'xorvion', label:'Xorvion AI', v:'xorvion-ai.vercel.app', href:'https://xorvion-ai.vercel.app/'},
     {k:'phone', label:'Phone', v:cv.phone, href:'tel:'+cv.phone.replace(/\s/g,'')},
   ].map(l=>`
     <a class="iconlink" href="${l.href}" ${l.k==='email'||l.k==='phone'?'':'target="_blank" rel="noopener"'} aria-label="${l.label}: ${l.v}">
