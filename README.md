@@ -5,7 +5,7 @@ Fast, dependency-free single-page site (vanilla HTML / CSS / JS) with a terminal
 
 ## 🔗 Links
 
-- **🌐 Live site** → [sumit-kumar.vercel.app](https://sumit-kumar.vercel.app/)
+- **🌐 Live site** → [sumitkr28.vercel.app](https://sumitkr28.vercel.app/)
 - **💻 GitHub** → [@Sumitkr28](https://github.com/Sumitkr28)
 - **💼 LinkedIn** → [sumit-kumar2812](https://linkedin.com/in/sumit-kumar2812)
 - **📧 Email** → [sumitchoudhary2812@gmail.com](mailto:sumitchoudhary2812@gmail.com)
