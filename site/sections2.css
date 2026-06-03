@@ -27,11 +27,15 @@
   border-bottom:1px solid var(--line); padding:20px 4px; transition:.22s; cursor:default;
 }
 .certs .row:hover{ padding-left:14px; background:linear-gradient(90deg,rgba(39,229,224,.05),transparent); }
-.certs .row .nm{ font-size:17px; font-weight:600; letter-spacing:-.01em; }
+.certs .row .nm{ font-size:17px; font-weight:600; letter-spacing:-.01em; display:inline-flex; align-items:center; gap:8px; }
 .certs .row .og{ font-family:var(--mono); font-size:12px; color:var(--dim); margin-top:5px; }
 .certs .row .dt{ font-family:var(--mono); font-size:12px; color:var(--cy); white-space:nowrap; }
 .certs .row .left{ display:flex; gap:18px; align-items:baseline; }
 .certs .row .ix{ font-family:var(--mono); font-size:11px; color:var(--dim2); }
+.certs a.row.link{ cursor:pointer; text-decoration:none; color:inherit; }
+.certs a.row.link:hover .nm{ color:var(--cy); }
+.certs .row .certarr{ color:var(--dim2); opacity:0; transform:translate(-4px,2px); transition:.22s; flex:none; }
+.certs a.row.link:hover .certarr{ color:var(--cy); opacity:1; transform:none; }
 @media(max-width:860px){ .edu-wrap{ grid-template-columns:1fr; gap:40px; } }
 
 /* ===== Contact ===== */
@@ -77,6 +81,10 @@
 .contact .field input::placeholder, .contact .field textarea::placeholder{ color:var(--dim2); }
 .contact .field input:focus, .contact .field textarea:focus{ outline:none; border-color:var(--cy); background:#0A0A0B; }
 .contact .cform-btn{ align-self:flex-start; margin-top:4px; }
+.contact .cform-btn:disabled{ opacity:.6; cursor:wait; }
+.contact .cform-status{ font-family:var(--mono); font-size:13px; min-height:18px; transition:.22s; }
+.contact .cform-status.ok{ color:var(--cy); }
+.contact .cform-status.err{ color:#ff6b6b; }
 @media(max-width:900px){ .contact .contact-cols{ grid-template-columns:1fr; gap:44px; } }
 @media(max-width:520px){ .contact .cform .frow{ grid-template-columns:1fr; } }
 

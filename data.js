@@ -94,10 +94,10 @@ window.CV = {
     period: "2022 — 2026",
   },
   certifications: [
-    { name: "Data Structures & Algorithms", org: "E&ICT Academy, IIT Kanpur", date: "Jul 2025" },
-    { name: "Data Science with Python", org: "E&ICT Academy, IIT Kanpur", date: "Aug 2025" },
-    { name: "Artificial Intelligence Fundamentals", org: "IBM", date: "Oct 2025" },
-    { name: "Data Analytics Job Simulation", org: "Deloitte (Forage)", date: "Jan 2026" },
-    { name: "Software Engineering Job Simulation", org: "JPMorgan Chase & Co.", date: "Jan 2026" },
+    { name: "Data Structures & Algorithms", org: "E&ICT Academy, IIT Kanpur", date: "Jul 2025", link: "https://verify.eicta.digitalcredentials.in/b6e22e04-8cda-43e8-b5b5-683d4725eb97" },
+    { name: "Data Science with Python", org: "E&ICT Academy, IIT Kanpur", date: "Aug 2025", link: "https://verify.eicta.digitalcredentials.in/9b902701-ed60-4e2c-bae9-9efe0648087b" },
+    { name: "Artificial Intelligence Fundamentals", org: "IBM", date: "Oct 2025", link: "https://skills.yourlearning.ibm.com/certificate/share/408d72c024ewogICJvYmplY3RJZCIgOiAiUExBTi03OTEzRUUxREIwMzAiLAogICJsZWFybmVyQ05VTSIgOiAiNTczMjA5NVJFRyIsCiAgIm9iamVjdFR5cGUiIDogIkFDVElWSVRZIgp93fef0d4388-10" },
+    { name: "Data Analytics Job Simulation", org: "Deloitte (Forage)", date: "Jan 2026", link: "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_m55njGah4ERWC9NuN_1769187873539_completion_certificate.pdf" },
+    { name: "Software Engineering Job Simulation", org: "JPMorgan Chase & Co.", date: "Jan 2026", link: "https://www.theforage.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_m55njGah4ERWC9NuN_1769009088796_completion_certificate.pdf" },
   ],
 };

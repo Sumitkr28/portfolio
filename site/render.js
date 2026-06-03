@@ -65,12 +65,15 @@
   el('eduPer').textContent = cv.education.period;
 
   // Certs
-  el('certList').innerHTML = cv.certifications.map((c,i)=>`
-    <div class="row">
-      <div class="left"><span class="ix">0${i+1}</span><div><div class="nm">${c.name}</div><div class="og">${c.org}</div></div></div>
-      <div class="dt">${c.date}</div>
-    </div>
-  `).join('');
+  const certArrow = '<svg class="certarr" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>';
+  el('certList').innerHTML = cv.certifications.map((c,i)=>{
+    const inner = `
+      <div class="left"><span class="ix">0${i+1}</span><div><div class="nm">${c.name}${c.link?certArrow:''}</div><div class="og">${c.org}</div></div></div>
+      <div class="dt">${c.date}</div>`;
+    return c.link
+      ? `<a class="row link" href="${c.link}" target="_blank" rel="noopener" aria-label="View ${c.name} certificate (opens in new tab)">${inner}</a>`
+      : `<div class="row">${inner}</div>`;
+  }).join('');
 
   // Contact
   const icons = {

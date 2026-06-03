@@ -201,10 +201,12 @@
           <div class="links" id="contactLinks"></div>
         </div>
 
-        <form class="cform reveal d1" id="contact-form" action="https://formsubmit.co/sumitchoudhary2812@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="New message from portfolio site">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
+        <form class="cform reveal d1" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="44372b2a-ff05-4eca-97c9-f0c4dd3217b3">
+          <input type="hidden" name="subject" value="New message from portfolio site">
+          <input type="hidden" name="from_name" value="Portfolio · sumitkumar">
+          <!-- honeypot: hidden from humans, traps bots -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
           <div class="frow">
             <label class="field">
               <span class="flbl">// name</span>

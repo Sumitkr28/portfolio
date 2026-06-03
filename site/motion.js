@@ -105,4 +105,43 @@
     });
   }, {threshold:0.4});
   sections.forEach(id=>{ const el=document.getElementById(id); if(el) sio.observe(el); });
+
+  // Contact form — AJAX submit to Web3Forms (keeps user on the page)
+  const form = document.getElementById('contact-form');
+  if(form){
+    const btn = form.querySelector('.cform-btn');
+    const status = document.createElement('div');
+    status.className = 'cform-status';
+    status.setAttribute('role','status');
+    status.setAttribute('aria-live','polite');
+    form.appendChild(status);
+    const btnText = btn ? btn.innerHTML : '';
+
+    form.addEventListener('submit', async (e)=>{
+      e.preventDefault();
+      status.className = 'cform-status';
+      status.textContent = '';
+      if(btn){ btn.disabled = true; btn.innerHTML = 'Sending…'; }
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' },
+        });
+        const data = await res.json().catch(()=>({}));
+        if(res.ok && data.success){
+          status.classList.add('ok');
+          status.textContent = '✓ Message sent — I\'ll get back to you soon.';
+          form.reset();
+        } else {
+          throw new Error(data.message || 'Something went wrong.');
+        }
+      } catch(err) {
+        status.classList.add('err');
+        status.textContent = '✗ Couldn\'t send. Email me directly at sumitchoudhary2812@gmail.com';
+      } finally {
+        if(btn){ btn.disabled = false; btn.innerHTML = btnText; }
+      }
+    });
+  }
 })();
