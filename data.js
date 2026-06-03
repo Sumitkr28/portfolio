@@ -36,7 +36,7 @@ window.CV = {
     },
     {
       role: "AI & Machine Learning Intern",
-      company: "Kloud Technology Works Pvt Ltd",
+      company: "AuthNull",
       period: "Mar 2026 — Present",
       stack: ["Python", "OAuth2.1", "LLM Integration", "AI Agent", "SPIFFE", "mTLS", "MCP Server"],
       points: [
