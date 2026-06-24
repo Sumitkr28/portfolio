@@ -17,7 +17,7 @@
 
   // Projects
   el('projList').innerHTML = cv.projects.map((p,i)=>`
-    <div class="proj reveal" data-screen-label="Project ${p.num}">
+    <div class="proj reveal${p.hidden?' proj-hidden':''}" data-screen-label="Project ${p.num}">
       <div class="pmedia">
         <div class="pframe">
           <div class="pframe-bar"><span></span><span></span><span></span><em>${p.demo ? p.demo.replace(/^https?:\/\//,'').replace(/\/$/,'') : p.title.toLowerCase().replace(/\s+/g,'-')}</em></div>
@@ -43,6 +43,23 @@
       </div>
     </div>
   `).join('');
+
+  // "See more" toggle for hidden projects
+  const hiddenCount = cv.projects.filter(p=>p.hidden).length;
+  if(hiddenCount){
+    const moreBtn = document.createElement('button');
+    moreBtn.type = 'button';
+    moreBtn.className = 'btn seemore-btn reveal';
+    const labelMore = `See ${hiddenCount} more project${hiddenCount>1?'s':''} <span class="arr">↓</span>`;
+    const labelLess = `Show less <span class="arr">↑</span>`;
+    moreBtn.innerHTML = labelMore;
+    moreBtn.addEventListener('click', ()=>{
+      const open = document.body.classList.toggle('projects-expanded');
+      moreBtn.innerHTML = open ? labelLess : labelMore;
+      if(window.__observeReveal) window.__observeReveal();
+    });
+    el('projList').insertAdjacentElement('afterend', moreBtn);
+  }
 
   // Experience
   el('expList').innerHTML = cv.experience.map(e=>`
