@@ -14,11 +14,11 @@ window.CV = {
     "Computer Science undergraduate (B.Tech, 2026) specializing in Machine Learning and Generative AI, with hands-on experience building AI agents, RAG pipelines, and ensemble ML models using Python, scikit-learn, TensorFlow, and LangGraph. I design and ship production-grade ML and agentic AI systems that turn complex workflows into reliable, measurable outcomes.",
   skills: {
     "Languages": ["Python", "Java", "JavaScript", "TypeScript", "SQL"],
-    "Machine Learning": ["Supervised Learning", "Classification", "Regression", "Ensemble (XGBoost · LightGBM · CatBoost)", "Feature Engineering", "Model Evaluation", "Model Deployment"],
-    "GenAI & LLMs": ["AI Agents", "Multi-Agent Orchestration", "MCP Server", "RAG", "Vector Embeddings", "Semantic Search", "Tool Calling", "LLM Integration (Claude · Gemini · LLaMA)"],
-    "Frameworks & Libraries": ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "LangGraph", "LangChain", "FastAPI", "Flask"],
-    "MLOps, Data & Cloud": ["NLP", "EDA", "MLOps", "Data Pipelines", "CI/CD", "Docker", "Kubernetes", "AWS (S3 · EC2)", "PostgreSQL"],
-    "Backend & Security": ["REST APIs", "Microservices", "OAuth 2.1", "SPIFFE", "JWT", "MFA", "Git", "FAISS", "Power BI"],
+    "Machine Learning": ["Supervised Learning", "Classification", "Regression", "Feature Engineering", "Model Evaluation", "Model Deployment", "Ensemble Learning (XGBoost, LightGBM, CatBoost)"],
+    "GenAI & LLMs": ["AI Agents", "Multi-Agent Orchestration", "MCP Server", "RAG", "Vector Embeddings", "Semantic Search", "FAISS", "Tool Calling", "LLM Integration (Claude, Gemini, Llama)"],
+    "Frameworks & Libraries": ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "LangGraph", "LangChain", "Next.js", "React", "Flask"],
+    "Data Engineering, MLOps & Cloud": ["NLP", "EDA", "Data Pipelines", "MLOps", "Docker", "Kubernetes", "AWS (EC2, S3)", "PostgreSQL", "CI/CD"],
+    "Backend & Security": ["FastAPI", "REST APIs", "Microservices", "OAuth 2.1", "JWT", "SPIFFE", "MFA", "Git", "System Design", "Distributed Systems"],
   },
   skillsMarquee: ["PYTHON", "LANGGRAPH", "AI AGENTS", "RAG", "GEMINI", "FASTAPI", "MCP", "TENSORFLOW", "PYTORCH", "DOCKER", "KUBERNETES", "XGBOOST", "OAUTH 2.1", "EMBEDDINGS"],
   experience: [
@@ -26,7 +26,7 @@ window.CV = {
       role: "AI/ML Intern",
       company: "AuthNull",
       period: "Mar 2026 — Present",
-      stack: ["Python", "Claude", "MCP Server", "OAuth 2.1", "mTLS", "SPIFFE", "PostgreSQL", "Microservices"],
+      stack: ["Python", "AI Agents", "MCP Server", "API", "OAuth 2.1", "mTLS", "PostgreSQL", "Azure Database", "Docker", "Kubernetes", "Microservices"],
       points: [
         "Identity-security firm building push-based MFA — designing AI agents, microservices, and secure backend services.",
         "Designed AI agent workflows and MCP server integrations using Claude AI to automate business and engineering tasks.",
