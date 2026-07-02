@@ -10,6 +10,8 @@
 .exp .right li{ font-size:15.5px; line-height:1.6; list-style:none; padding-left:22px; position:relative; margin-bottom:14px; }
 .exp .right li::before{ content:'▸'; position:absolute; left:0; color:var(--cy); }
 .exp .right li .cy{ color:var(--cy); font-weight:500; }
+.exp .right li a{ color:var(--cy); font-weight:500; border-bottom:1px solid transparent; transition:border-color .2s; }
+.exp .right li a:hover{ border-bottom-color:var(--cy); }
 .exp .stack{ display:flex; flex-wrap:wrap; gap:7px; margin-top:24px; }
 .exp .stack .t{ font-family:var(--mono); font-size:11px; padding:5px 10px; border:1px solid var(--line2); color:var(--dim); border-radius:2px; }
 @media(max-width:860px){ .exp .item{ grid-template-columns:1fr; gap:24px; } }
