@@ -28,7 +28,7 @@ window.CV = {
       period: "Mar 2026 — Present",
       stack: ["Python", "AI Agents", "MCP Server", "API", "OAuth 2.1", "mTLS", "PostgreSQL", "Azure Database", "Docker", "Kubernetes", "Microservices"],
       points: [
-        "Identity-security firm building push-based MFA — designing AI agents, microservices, and secure backend services.",
+        "AuthNull – Identity-security platform building push-based MFA, AI agents, microservices, and secure backend services.",
         "Designed AI agent workflows and MCP server integrations using Claude AI to automate business and engineering tasks.",
         "Built secure MFA backend microservices with OAuth 2.1, mTLS, SPIFFE, Active Directory & PostgreSQL — serving 3K+ requests/day — while contributing to microservice migration, consolidation, and authentication-platform modernization.",
         "Integrated LLM pipelines that cut response latency by 25% while improving task accuracy.",
