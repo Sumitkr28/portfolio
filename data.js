@@ -11,7 +11,7 @@ window.CV = {
   github: "github.com/Sumitkr28",
   linkedin: "linkedin.com/in/sumit-kumar2812",
   about:
-    "Computer Science undergraduate (B.Tech, 2026) specializing in Machine Learning and Generative AI, with hands-on experience building AI agents, RAG pipelines, and ensemble ML models using Python, scikit-learn, TensorFlow, and LangGraph. I design and ship production-grade ML and agentic AI systems that turn complex workflows into reliable, measurable outcomes.",
+    "Computer Science graduate (B.Tech 2026) specializing in Machine Learning and Generative AI — building AI agents, RAG pipelines, secure backend services, and scalable software with Python, FastAPI, TensorFlow, and LangGraph.",
   skills: {
     "Languages": ["Python", "Java", "JavaScript", "TypeScript", "SQL"],
     "Machine Learning": ["Supervised Learning", "Classification", "Regression", "Feature Engineering", "Model Evaluation", "Model Deployment", "Ensemble Learning (XGBoost, LightGBM, CatBoost)"],
@@ -24,7 +24,7 @@ window.CV = {
   experience: [
     {
       role: "AI/ML Intern",
-      company: "AuthNull",
+      company: "Kloud Technology Works Pvt. Ltd.",
       period: "Mar 2026 — Present",
       stack: ["Python", "AI Agents", "MCP Server", "API", "OAuth 2.1", "mTLS", "PostgreSQL", "Azure Database", "Docker", "Kubernetes", "Microservices"],
       points: [
@@ -36,12 +36,12 @@ window.CV = {
     },
     {
       role: "Creator & AI Engineer",
-      company: "Xorvion AI",
+      company: "Xorvion AI — Applied AI Studio",
       period: "May 2026 — Present",
       stack: ["Next.js", "TypeScript", "Python", "AI Agents", "LLMs", "RAG", "FastAPI", "Vercel"],
       points: [
-        "Built production-grade AI applications from concept to deployment, including AI agents, RAG systems, and secure backend services.",
-        "Built and deployed 3 products including SafeTrace (real-time URL threat detection), Zora (a conversational AI assistant fine-tuned on user data), and Couponex (an AI-powered coupon & voucher marketplace).",
+        "<a href='https://xorvion-ai.vercel.app/' target='_blank' rel='noopener'>Xorvion AI</a> is my personal applied AI workspace where I design, build, and deploy production-ready AI applications, AI agents, and secure backend systems.",
+        "Built and deployed four end-to-end AI products: Mergent AI, HelixOS, Zora AI, and SafeTrace AI — covering AI agents, LLM workflows, code intelligence, and cybersecurity.",
         "Designed multi-agent systems with reasoning and memory, model fine-tuning, and data pipelines for scraping, labeling, and evaluation.",
         "Drive end-to-end product development — from LLM integration and backend APIs to UI design and deployment on Vercel.",
       ],
@@ -50,6 +50,23 @@ window.CV = {
   projects: [
     {
       num: "01",
+      title: "Zora AI",
+      sub: "GenAI · Streaming Chat Assistant",
+      date: "2026",
+      img: "project-images/zora.png",
+      stack: ["Next.js 14", "TypeScript", "Gemini 3.1 Flash Lite", "LLM", "RAG"],
+      metric: "Live",
+      metricLabel: "on Vercel",
+      repo: "https://github.com/Sumitkr28/zora-ai",
+      demo: "https://zora-chatbot.vercel.app/",
+      points: [
+        "Built a free-tier AI chat assistant streaming token-by-token responses from Google's Gemini 3.1 Flash Lite.",
+        "Persisted conversations in Firestore with Google & passwordless email auth, plus an instant guest mode.",
+        "Added multimodal uploads — images, PDFs, audio & video — via the Gemini Files API, with multi-key failover.",
+      ],
+    },
+    {
+      num: "02",
       title: "HelixOS AI",
       sub: "GenAI · Multi-Agent Business OS",
       date: "Jun 2026",
@@ -66,7 +83,7 @@ window.CV = {
       ],
     },
     {
-      num: "02",
+      num: "03",
       title: "Mergent AI",
       sub: "Agentic AI · Microservice Migration",
       date: "May 2026",
@@ -83,7 +100,7 @@ window.CV = {
       ],
     },
     {
-      num: "03",
+      num: "04",
       title: "SafeTrace",
       sub: "ML Security · URL Threat Detection",
       date: "Apr 2026",
@@ -93,28 +110,11 @@ window.CV = {
       metricLabel: "accuracy",
       repo: "https://github.com/Sumitkr28/Project--SafeTrace",
       demo: "https://safetrace-ai.vercel.app/",
+      hidden: true,
       points: [
         "Built an AI-powered URL threat detection platform achieving 95%+ accuracy (F1 > 0.95) using a stacking ensemble of XGBoost, LightGBM, CatBoost & Random Forest with SHAP-based explainability.",
         "Engineered 20+ threat features from URL heuristics, WHOIS, threat feeds, and Playwright headless-browser analysis.",
         "Built a FastAPI backend with real-time risk scoring and explainable verdicts in under 5 seconds.",
-      ],
-    },
-    {
-      num: "04",
-      title: "Zora AI",
-      sub: "GenAI · Streaming Chat Assistant",
-      date: "2026",
-      img: "project-images/zora.png",
-      stack: ["Next.js 14", "TypeScript", "Gemini 3.1 Flash Lite", "LLM", "RAG"],
-      metric: "Live",
-      metricLabel: "on Vercel",
-      repo: "https://github.com/Sumitkr28/zora-ai",
-      demo: "https://zora-chatbot.vercel.app/",
-      hidden: true,
-      points: [
-        "Built a free-tier AI chat assistant streaming token-by-token responses from Google's Gemini 3.1 Flash Lite.",
-        "Persisted conversations in Firestore with Google & passwordless email auth, plus an instant guest mode.",
-        "Added multimodal uploads — images, PDFs, audio & video — via the Gemini Files API, with multi-key failover.",
       ],
     },
     {
